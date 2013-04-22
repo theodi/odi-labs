@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  	<link rel="stylesheet" type="text/css" href="stylesheets/bubbletree.css" />
     <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
@@ -24,6 +25,11 @@
           <li class="single"><a href="https://github.com/theodi">View On <strong>GitHub</strong></a></li>
         </ul>
       </header>
+      <section>
+      	<div class="bubbletree-wrapper">
+      		<div class="bubbletree"></div>
+      	</div>        
+      </section>
       <section>
         <p>The Open Data Institute aims to unlock the supply and demand for open data, to communicate its value, and to share tools and guidance that help others to adopt open data.</p>
 
@@ -59,5 +65,42 @@
     </footer>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
+  	<script type="text/javascript" src="javascripts/jquery-1.5.2.min.js"></script>
+  	<script type="text/javascript" src="javascripts/jquery.history.js"></script>
+  	<script type="text/javascript" src="javascripts/raphael.js"></script>
+  	<script type="text/javascript" src="javascripts/vis4.js"></script>
+  	<script type="text/javascript" src="javascripts/Tween.js"></script>
+  	<script type="text/javascript" src="javascripts/bubbletree.js"></script>
+  	<script type="text/javascript" src="javascripts/cofog.js"></script>	
+	
+  	<script type="text/javascript">
+       
+  		$(function() {
+		
+        rootNode = {
+        	label: "All repositories",
+        	amount: 1000000,
+        	children: [{
+        		label: "forks",
+        		amount: 650000
+        	}, {
+        		label: "frontend",
+        		amount: 350000
+        	}, {
+        		label: "frontend",
+        		amount: 350000
+        	}]
+        };
+			
+  			new BubbleTree({
+  				data: rootNode,
+  				container: '.bubbletree'
+  			});
+		
+			
+  		});
+                                        
+  	</script>
+
   </body>
 </html>
