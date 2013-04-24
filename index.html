@@ -77,21 +77,9 @@
        
   		$(function() {
 		
-        rootNode = {
-        	label: "All repositories",
-        	amount: 1000000,
-        	children: [{
-        		label: "forks",
-        		amount: 650000
-        	}, {
-        		label: "frontend",
-        		amount: 350000
-        	}, {
-        		label: "frontend",
-        		amount: 350000
-        	}]
-        };
-			
+
+        rootNode = {"label":"All repositories","amount":93908,"children":[{"label":"Misc","amount":5752,"children":[{"label":"blosts","taxonomy":null,"color":"7f7f7f","amount":152},{"label":"chef-envbuilder","taxonomy":"Ruby","color":"ff0000","amount":372},{"label":"chef-libcurl","taxonomy":"Ruby","color":"ff0000","amount":152},{"label":"chef-rvm","taxonomy":"Ruby","color":"ff0000","amount":132},{"label":"chef-sqlite","taxonomy":"Ruby","color":"ff0000","amount":128},{"label":"csv-profiler","taxonomy":"Ruby","color":"ff0000","amount":764},{"label":"cuke-chef","taxonomy":"Ruby","color":"ff0000","amount":1136},{"label":"github-viewer","taxonomy":"Ruby","color":"ff0000","amount":348},{"label":"github-viewer-test-data","taxonomy":null,"color":"7f7f7f","amount":136},{"label":"hot-drinks","taxonomy":null,"color":"7f7f7f","amount":168},{"label":"linked-csv-browser","taxonomy":"JavaScript","color":"00ff00","amount":1928},{"label":"monitoring","taxonomy":"Ruby","color":"ff0000","amount":192},{"label":"odibot","taxonomy":"CoffeeScript","color":"7f7f00","amount":144}]},{"label":"Sites","amount":86108,"children":[{"label":"dashboards","taxonomy":"JavaScript","color":"00ff00","amount":664},{"label":"member-directory","taxonomy":"Ruby","color":"ff0000","amount":1820},{"label":"odi-website-drupal","taxonomy":"PHP","color":"0000ff","amount":80728},{"label":"office-calendar","taxonomy":"Ruby","color":"ff0000","amount":1552},{"label":"open-data-certificate","taxonomy":"XML","color":"007f7f","amount":1344}]},{"label":"Forks","amount":2048,"children":[{"label":"bootstrap","taxonomy":"JavaScript","color":"00ff00","amount":308},{"label":"bubbletree","taxonomy":"JavaScript","color":"00ff00","amount":148},{"label":"capsulecrm","taxonomy":"Ruby","color":"ff0000","amount":176},{"label":"chef-drush","taxonomy":"Ruby","color":"ff0000","amount":128},{"label":"cucumber-chef","taxonomy":"Ruby","color":"ff0000","amount":376},{"label":"drupal-cucumber","taxonomy":"Ruby","color":"ff0000","amount":120},{"label":"fullcalendar-rails","taxonomy":"Ruby","color":"ff0000","amount":128},{"label":"government-service-design-manual","taxonomy":"JavaScript","color":"00ff00","amount":124},{"label":"GuestNet","taxonomy":"PHP","color":"0000ff","amount":128},{"label":"hubot-irc","taxonomy":"CoffeeScript","color":"7f7f00","amount":128},{"label":"less-rails-bootstrap","taxonomy":"Ruby","color":"ff0000","amount":160},{"label":"licenses","taxonomy":"JavaScript","color":"00ff00","amount":124}]}]};
+
   			new BubbleTree({
   				data: rootNode,
   				container: '.bubbletree'
