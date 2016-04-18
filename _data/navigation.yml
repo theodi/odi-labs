@@ -2,6 +2,8 @@
   items:
     - name: Team
       path: /team
+    - name: Mission
+      path: /mission
 
 - name: Bar
   items:
