@@ -4,6 +4,8 @@
 @import 'bootstrap';
 @import 'fonts';
 @import 'colours';
+@import 'nav';
+@import 'footer';
 
 body {
   font-family: $font-family-sans-serif;
@@ -43,38 +45,11 @@ h1, h2, h3 {
   text-align: center;
 }
 
-$footer-height: 40px;
-
-html {
-  position: relative;
-  min-height: 100%;
-  text-transform: none;
+a {
+  color: $brand-primary;
 }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: $footer-height;
-}
-
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-
-  margin-top: $padding-large-vertical;
-
-  background-color: $brand-primary;
-  height: $footer-height;
-
-  padding: $padding-large-vertical $padding-large-horizontal;
-
-  text-align: center;
-
-  a {
-    color: white;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
+a:hover {
+  text-decoration: none;
+  color: darken($brand-primary, 10%);
 }
