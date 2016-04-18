@@ -1,0 +1,9 @@
+<div id='footer'>
+  <ul class='list-inline'>
+    {% for link in site.data.links %}
+      <li>
+        <a href='{{ link.url }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
