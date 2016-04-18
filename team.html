@@ -5,9 +5,8 @@
 
 <div class='row'>
 {% for person in site.team %}
-  {% capture param-name %}{{ person.name | downcase | replace: ' ', '-' }}{% endcapture %}
   <div class='person col-md-4 thumbnail'>
-    <a href='/team/{{ param-name }}'>
+    <a href='{{ person.url }}'>
       <img src='{{ person.photo }}' />
       <h2>{{ person.name }}</h2>
       <h3>{{ person.role }}</h3>
