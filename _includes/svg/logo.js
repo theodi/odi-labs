@@ -45,6 +45,18 @@ logo.viewbox({
 
 var badge = logo.path(odi_path.join(' '))
 
+var text = logo.text('labs').move(512, -147).addClass('labs')
+text.font({
+  size: 272,
+  anchor: 'left',
+})
+
+var group = logo.group()
+group.add(badge)
+group.add(text)
+
+group.linkTo('/')
+
 var image = logo.image('{{ site.data.header.image.urls.raw }}')
 image.size(
   {{ site.data.header.image.size.x }},
@@ -56,12 +68,5 @@ image.size(
 .y(
   {{ site.data.header.image.offset.y }}
 )
-
-image.clipWith(badge)
-
-var text = logo.text('labs').move(512, -147).addClass('labs')
-text.font({
-  size: 272,
-  anchor: 'left',
-})
+badge.maskWith(image)
 </script>

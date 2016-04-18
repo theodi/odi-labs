@@ -1,0 +1,9 @@
+- name: About
+  items:
+    - name: Team
+      path: /team
+
+- name: Bar
+  items:
+    - name: Bar
+      path: /bar
