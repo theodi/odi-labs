@@ -6,6 +6,15 @@ layout: default
   <div class='col-md-8' id='bio'>
     <h1>{{ page.name }}</h1>
     <h2>{{ page.role }}</h2>
+    <ul class='list-inline'>
+      {% for link in page.links %}
+        <li>
+          <a href='{{ link[1] }}'>
+            <i class='fa fa-{{ link[0] }}'></i>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
     {{ page.bio | markdownify }}
   </div>
   <div class='col-md-4'>
