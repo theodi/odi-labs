@@ -1,11 +1,10 @@
 - name: About
-  items:
+  path: /about/
+  children:
     - name: Team
       path: /team
     - name: Mission
       path: /mission
 
-- name: Bar
-  items:
-    - name: Bar
-      path: /bar
+- name: Roadmap
+  path: /roadmap/
