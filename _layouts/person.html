@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class='row'>
+  <div class='col-md-8' id='bio'>
+    <h1>{{ page.name }}</h1>
+    <h2>{{ page.role }}</h2>
+    {{ page.bio | markdownify }}
+  </div>
+  <div class='col-md-4'>
+    <img src='{{ page.photo }}' />
+  </div>
+</div>

@@ -13,6 +13,16 @@ h1, h2, h3 {
   text-align: center;
 }
 
+#bio {
+  h1, h2 {
+    text-align: right;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
 .labs {
   fill: $brand-primary;
   font-family: $font-family-sans-serif;

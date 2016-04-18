@@ -1,6 +1,17 @@
 defaults:
-  -
-    scope:
+  - scope:
       path: ''
     values:
-      layout: 'default'
+      layout: default
+  - scope:
+      path: ''
+      type: team
+    values:
+      layout: person
+
+collections:
+  team:
+    output: true
+    layout: person
+
+permalink: pretty

@@ -4,7 +4,7 @@
 <h1>Team</h1>
 
 <div class='row'>
-{% for person in site.data.team %}
+{% for person in site.team %}
   {% capture param-name %}{{ person.name | downcase | replace: ' ', '-' }}{% endcapture %}
   <div class='person col-md-4 thumbnail'>
     <a href='/team/{{ param-name }}'>
