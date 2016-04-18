@@ -5,6 +5,14 @@
 @import 'fonts';
 @import 'colours';
 
+body {
+  font-family: $font-family-sans-serif;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
 .labs {
   fill: $brand-primary;
   font-family: $font-family-sans-serif;
@@ -12,4 +20,10 @@
 
 #logo {
   margin: $padding-small-horizontal;
+}
+
+.person {
+  border: none;
+  margin: auto;
+  margin-bottom: $padding-large-vertical;
 }

@@ -1,0 +1,17 @@
+---
+---
+
+<h1>Team</h1>
+
+<div class='row'>
+{% for person in site.data.team %}
+  {% capture param-name %}{{ person.name | downcase | replace: ' ', '-' }}{% endcapture %}
+  <div class='person col-md-4 thumbnail'>
+    <a href='/team/{{ param-name }}'>
+      <img src='{{ person.photo }}' />
+      <h2>{{ person.name }}</h2>
+      <h3>{{ person.role }}</h3>
+    </a>
+  </div>
+{% endfor %}
+</div>
