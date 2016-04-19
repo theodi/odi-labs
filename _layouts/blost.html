@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+{% for person in site.team %}
+  {% capture slug-name %}{{ person.url | split: '/' | last }}{% endcapture %}
+  {% if page.author.slug == slug-name %}
+    {% assign author = person %}
+  {% endif %}
+{% endfor %}
+
+<div class='row'>
+  <div class='col-md-8'>
+    <h1>{{ page.title }}</h1>
+    <a href='{{ author.url }}'>
+      <h2 class='author'>{{ author.name }} - {{ author.role }}</h2>
+    </a>
+
+    <div id='blog-content'>
+      {{ page.details.content }}
+    </div>
+  </div>
+  <div class='col-md-4 portrait hidden-xs'>
+    <a href='{{ author.url }}'>
+      <img src='{{ author.photo }}' />
+    </a>
+  </div>
+</div>

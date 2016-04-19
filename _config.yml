@@ -9,6 +9,12 @@ defaults:
     values:
       layout: person
 
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: blost
+
 collections:
   team:
     output: true

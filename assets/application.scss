@@ -25,6 +25,14 @@ h1, h2, h3 {
   }
 }
 
+#blog-content {
+  text-align: justify;
+}
+
+h2.author {
+  font-size: 1.5em;
+}
+
 .labs {
   fill: $brand-primary;
   font-family: $font-family-sans-serif;
