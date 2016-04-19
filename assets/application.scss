@@ -1,9 +1,11 @@
 ---
 ---
 
+$brand-primary: {{ site.data.colours.brand-primary }};
+$hover-colour: darken($brand-primary, 10%);
+
 @import 'bootstrap';
 @import 'fonts';
-@import 'colours';
 @import 'nav';
 @import 'footer';
 
@@ -61,6 +63,10 @@ h2.author {
   font-family: $font-family-sans-serif;
 }
 
+svg:hover .labs {
+  fill: $hover-colour;
+}
+
 #logo {
   margin: $padding-small-horizontal;
 }
@@ -82,5 +88,5 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: darken($brand-primary, 10%);
+  color: $hover-colour;
 }
