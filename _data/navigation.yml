@@ -6,5 +6,8 @@
     - name: Mission
       path: /mission
 
+- name: Blog
+  path: /blog/
+
 - name: Roadmap
   path: /roadmap/
