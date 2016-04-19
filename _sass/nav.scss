@@ -71,7 +71,7 @@ nav {
 // mobile button hover
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: $hover-colour;
+  background-color: darken($brand-primary, 10%);
 }
 
 // mobile button bars

@@ -2,7 +2,7 @@
 ---
 
 $brand-primary: {{ site.data.colours.brand-primary }};
-$hover-colour: darken($brand-primary, 5%);
+$hover-colour: darken(complement($brand-primary), 20%);
 
 @import 'bootstrap';
 @import 'fonts';
