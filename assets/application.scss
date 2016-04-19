@@ -90,3 +90,17 @@ a:hover {
   text-decoration: none;
   color: $hover-colour;
 }
+
+.btn-info {
+  background-color: $brand-primary;
+}
+
+#credit-modal {
+  img {
+    max-width: 100%;
+  }
+}
+
+.modal-header {
+  text-align: center;
+}

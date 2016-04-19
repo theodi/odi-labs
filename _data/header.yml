@@ -1,13 +1,14 @@
 image:
+  title: Laboratory
   urls:
-    photo: https://www.flickr.com/photos/nstawski/4405082016/
+    photo: //www.flickr.com/photos/nstawski/4405082016/
     raw: //farm5.staticflickr.com/4005/4405082016_9a2be9fd02_o.jpg
   photographer:
     name: Nina
-    url: https://www.flickr.com/photos/nstawski/
+    url: //www.flickr.com/photos/nstawski/
   license:
     name: CC BY 2.0
-    url: https://creativecommons.org/licenses/by/2.0/
+    url: //creativecommons.org/licenses/by/2.0/
   size:
     x: 650
     y: 650

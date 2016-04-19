@@ -5,5 +5,44 @@
         <a href='{{ link.url }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
       </li>
     {% endfor %}
+    <li>
+      <a href='#' data-toggle='modal' data-target='#credit-modal'>
+        <i class='fa fa-camera-retro'></i><span class='hidden-xs'> Image</span>
+      </a>
+    </li>
   </ul>
+</div>
+
+
+
+<!-- Modal -->
+<div class='modal' id='credit-modal' tabindex='-1' role='dialog' aria-labelledby='credit-label' aria-hidden='true'>
+  <div class='modal-dialog'>
+    <div class='modal-content'>
+      <div class='modal-header'>
+        <span class='image-credit'>
+          Header image remixed from
+          <a href='{{ site.data.header.image.urls.photo }}'>
+            {{ site.data.header.image.title }}
+          </a> by
+          <a href='{{ site.data.header.image.photographer.url }}'>
+            {{ site.data.header.image.photographer.name }}
+          </a> -
+          <a href='{{ site.data.header.image.license.url }}'>
+            {{ site.data.header.image.license.name }}
+          </a>
+        </span>
+      </div>
+      <div class='modal-body'>
+        <a href='{{ site.data.header.image.urls.photo }}'>
+          <img src='{{ site.data.header.image.urls.raw }}' />
+        </a>
+      </div>
+      <div class='modal-footer'>
+        <button type='button' class='btn btn-info' data-dismiss='modal' aria-label='Close'>
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
 </div>

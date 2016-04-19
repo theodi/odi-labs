@@ -55,7 +55,9 @@ var group = logo.group()
 group.add(badge)
 group.add(text)
 
-group.linkTo('/')
+group.linkTo(function(link) {
+  link.to('/')
+})
 
 var image = logo.image('{{ site.data.header.image.urls.raw }}')
 image.size(
