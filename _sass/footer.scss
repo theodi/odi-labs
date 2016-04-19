@@ -31,5 +31,6 @@ body {
 
   a:hover {
     text-decoration: none;
+    color: darken($brand-primary, 10%);
   }
 }

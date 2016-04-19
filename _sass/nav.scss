@@ -28,16 +28,18 @@ nav {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
+  color: darken($brand-primary, 10%);
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  opacity: 0.5;
+  color: darken($brand-primary, 10%);
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  opacity: 0.5;
+  color: darken($brand-primary, 10%);
+  background-color: lighten($brand-primary, 10%);
 }
 
 .navbar {
@@ -46,22 +48,22 @@ nav {
 
 /* mobile version */
 .navbar-default .navbar-toggle {
-  border-color: #333;
+  border-color: lighten($brand-primary, 10%);
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: darken($brand-primary, 10%);
+  background-color: darken($brand-primary, 5%);
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #333;
+  background-color: lighten($brand-primary, 10%);
 }
 
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: white;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
+    color: darken($brand-primary, 10%);
   }
 }
