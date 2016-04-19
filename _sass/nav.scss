@@ -1,40 +1,60 @@
 /* Dragones below this line */
 
+// remove curved edges
+.navbar {
+  -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
+}
+
+// this appears to be a noop
 nav {
   background-color: $brand-primary;
 }
 
+// noop
 .navbar-default .navbar-nav > .active > a {
 }
 
+// main bar
 .navbar {
   border: 0px;
   background-color: $brand-primary;
 }
 
 /* navbar */
+// main bar - best left blank
 .navbar-default {
 }
+
 /* title */
+// what it says
 .navbar-default .navbar-brand {
   color: white;
 }
+
+// also for title
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
 }
+
 /* link */
+// links
 .navbar-default .navbar-nav > li > a {
   color: white;
 }
+
+// hover links
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
   color: $hover-colour;
 }
+
+// 'active' links
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: $hover-colour;
 }
+
+// dropped-down dropdown
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
@@ -42,26 +62,30 @@ nav {
   background-color: lighten($brand-primary, 10%);
 }
 
-.navbar {
-  -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;
-}
-
 /* mobile version */
+// mobile button border
 .navbar-default .navbar-toggle {
   border-color: lighten($brand-primary, 10%);
 }
+
+// mobile button hover
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: $hover-colour;
 }
+
+// mobile button bars
 .navbar-default .navbar-toggle .icon-bar {
   background-color: lighten($brand-primary, 10%);
 }
 
 @media (max-width: 767px) {
+  // dropped-down text
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
     color: white;
   }
+
+  // dropped-down hover text
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
     color: $hover-colour;
