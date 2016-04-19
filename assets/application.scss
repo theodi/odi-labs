@@ -27,6 +27,10 @@ h1, h2, h3 {
 
 #blog-content {
   text-align: justify;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 h2.author {
