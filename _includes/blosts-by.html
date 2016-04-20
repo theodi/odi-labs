@@ -1,8 +1,11 @@
 {% assign blosts = '' %}
 {% for blost in site.posts %}
   {% if include.author == blost.author.slug %}
-    {% capture title %}{{ blost.title | slice: 0, 20 }}{% endcapture %}
-    {% capture blosts %}{{ blosts }}'{{ blost.url }}': "{{ blost.title }}",
+    {% capture blost-slug %}{{ blost.url | split: '/' | last }}{% endcapture %}
+    {% unless page.slug == blost-slug %}
+      {% capture title %}{{ blost.title | slice: 0, 20 }}{% endcapture %}
+      {% capture blosts %}{{ blosts }}'{{ blost.url }}': "{{ blost.title }}",
   {% endcapture %}
+    {% endunless %}
   {% endif %}
 {% endfor %}

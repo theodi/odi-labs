@@ -1,9 +1,9 @@
 <div id='blosts'>
-  {{ include.words }} by {{ page.name | split: ' ' | first }}: <ul class='list-unstyled' id='blog-posts'></ul>
+  {{ include.words }} by {{ include.author | split: '-' | first | capitalize }}: <ul class='list-unstyled' id='blog-posts'></ul>
 </div>
 
+{% include blosts-by.html author = include.author %}
 <script>
-{% include blosts-by.html author = page.id %}
 
 var blosts = {
   {{ blosts }}
