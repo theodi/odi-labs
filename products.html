@@ -1,0 +1,16 @@
+---
+title: Products
+---
+
+<h1>Our products</h1>
+
+<dl id='products-list'>
+  {% for product in site.data.products %}
+    <dt>
+      <a href='{{ product.url }}'>{{ product.name }}</a>
+    </dt>
+    <dd>
+      {{ product.words | markdownify }}
+    </dd>
+  {% endfor %}
+</dl>

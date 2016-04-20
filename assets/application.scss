@@ -10,6 +10,7 @@
 body {
   font-family: $font-family-sans-serif;
   background-color: $ground-colour;
+  text-align: justify;
 }
 
 h1, h2, h3 {
@@ -38,7 +39,7 @@ h2.author {
   font-size: 1.5em;
 }
 
-.blog-archive {
+.blog-archive, #products-list {
   dd {
     border-bottom: 1px solid $gray-lighter;
   }
@@ -49,6 +50,7 @@ h2.author {
 
   dt {
     font-size: 1.5em;
+    padding-top: $padding-large-vertical;
   }
 }
 
@@ -102,5 +104,10 @@ a:hover {
 }
 
 .modal-header {
+  text-align: center;
+}
+
+#labradors {
+  width: 100%;
   text-align: center;
 }
