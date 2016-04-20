@@ -17,9 +17,7 @@ layout: default
     </ul>
     {{ page.bio | markdownify }}
   </div>
-  <div class='col-md-4 portrait'>
-    <img src='{{ page.photo }}' />
-  </div>
+  {% include portrait.html photo = page.photo %}
 </div>
 <div class='row'>
   <div id='blosts' class='col-md-12'>

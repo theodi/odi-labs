@@ -8,7 +8,7 @@ title: Team
 {% for person in site.team %}
   <div class='person col-md-4 thumbnail'>
     <a href='{{ person.url }}'>
-      <img src='{{ person.photo }}' />
+      {% include portrait.html photo = person.photo %}
       <h2>{{ person.name }}</h2>
       <h3>{{ person.role }}</h3>
     </a>
