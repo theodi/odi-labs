@@ -43,7 +43,7 @@ logo.viewbox({
   height: 200
 })
 
-var badge = logo.path(odi_path.join(' ')).addClass('labs') //fill('{{ site.data.colours.brand-primary }}')
+var badge = logo.path(odi_path.join(' ')).addClass('labs')
 
 var text = logo.text('labs').move(512, -147).addClass('labs')
 text.font({

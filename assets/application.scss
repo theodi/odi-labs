@@ -1,16 +1,15 @@
 ---
 ---
 
-$brand-primary: {{ site.data.colours.brand-primary }};
-$hover-colour: darken(complement($brand-primary), 20%);
-
 @import 'bootstrap';
+@import 'colours';
 @import 'fonts';
 @import 'nav';
 @import 'footer';
 
 body {
   font-family: $font-family-sans-serif;
+  background-color: $ground-colour;
 }
 
 h1, h2, h3 {
@@ -75,6 +74,7 @@ svg:hover .labs {
   border: none;
   margin: auto;
   margin-bottom: $padding-large-vertical;
+  background-color: transparent;
 }
 
 .portrait {

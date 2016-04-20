@@ -28,7 +28,7 @@ nav {
 /* title */
 // what it says
 .navbar-default .navbar-brand {
-  color: white;
+  color: $ground-colour;
 }
 
 // also for title
@@ -39,7 +39,7 @@ nav {
 /* link */
 // links
 .navbar-default .navbar-nav > li > a {
-  color: white;
+  color: $ground-colour;
 }
 
 // hover links
@@ -82,7 +82,7 @@ nav {
 @media (max-width: 767px) {
   // dropped-down text
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: white;
+    color: $ground-colour;
   }
 
   // dropped-down hover text

@@ -1,0 +1,5 @@
+//$brand-primary: {{ site.data.colours.primary }};
+$brand-primary: #fa8100;
+$hover-colour: darken(complement($brand-primary), 20%);
+
+$ground-colour: #eeeeee;
