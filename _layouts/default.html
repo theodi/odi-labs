@@ -2,7 +2,12 @@
 <html lang='en'>
   <head>
     {% include boilerplate.html %}
-    <title>{{ page.title }}</title>
+    {% assign title = page.title %}
+    {% unless title %}
+      {% assign title = page.name %}
+    {% endunless %}
+    
+    <title>{{ title }}</title>
   </head>
 
   <body>
