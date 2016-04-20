@@ -10,22 +10,22 @@ tag_ids:
 - blog
 tags:
 - id: http://contentapi.theodi.org/tags/articles/blog.json
-  web_url:
+  web_url: 
   title: Blog Post
   details:
     description: Blog Post
-    short_description:
+    short_description: 
     type: article
   content_with_tag:
     id: http://contentapi.theodi.org/with_tag.json?article=blog
     web_url: http://theodi.org/tags/blog
     slug: blog
-  parent:
+  parent: 
 related: []
 details:
   need_id: ''
   business_proposition: false
-  description:
+  description: 
   excerpt: I’ve run and managed various open-source operating systems. I’ve known
     the incomparable joy of typing make buildworld on a FreeBSD box and rebuilding
     the entire system from source. I’ve also had to endure the pain of looking after
@@ -36,7 +36,7 @@ details:
     from a technical point of view.
   language: en
   need_extended_font: false
-  url:
+  url: 
   content: |
     <p>I&rsquo;ve run and managed <a rel="external" href="http://www.freebsd.org/">various</a> <a rel="external" href="http://www.openbsd.org/">open-source</a> <a rel="external" href="http://www.gnu.org/gnu/gnu-linux-faq.html">operating systems</a>. I&rsquo;ve known the incomparable joy of typing <strong>make buildworld</strong> on a FreeBSD box and <em>rebuilding the entire system from source</em>. I&rsquo;ve also had to endure the pain of looking after a couple of different flavours of old-school closed Unix, where applying patches meant downloading opaque binary files, throwing a dice and crossing your fingers, and then finding that Java still didn&rsquo;t work. Quite aside from the ideological and political reasons for favouring Openness, it&rsquo;s just so much more appealing from a technical point of view.</p>
 
@@ -49,10 +49,12 @@ details:
     <p>Our <a rel="external" href="http://jenkins.theodi.org/">continuous integration system</a> is open too, which is a great incentive for us to keep everything green, and this feeds our <a rel="external" href="https://www.leftronic.com/share/g/OqF269">Super Awesome Dashboard</a> (and at the time of writing, I see the Failboat under Jenkins. Oops).</p>
 
     <p>So, for the most part, being Open By Default is exhilarating. But I suspect that streaking at a cricket match is exhilarating, too. And sometimes it does feel like we&rsquo;re running around naked&hellip;</p>
-  media_enquiries_name:
-  media_enquiries_email:
-  media_enquiries_telephone:
-  alternative_title:
+
+    <p><a rel="external" href="http://twitter.com/pikesley">@pikesley</a> / <a rel="external" href="http://twitter.com/ukoditech">@UKODITech</a></p>
+  media_enquiries_name: 
+  media_enquiries_email: 
+  media_enquiries_telephone: 
+  alternative_title: 
   organizations: []
   author:
     name: Sam Pikesley
