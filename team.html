@@ -5,13 +5,13 @@ title: Team
 <h1>Team</h1>
 
 <div class='row'>
-{% for person in site.team %}
-  <div class='person col-md-4 thumbnail'>
-    <a href='{{ person.url }}'>
-      {% include portrait.html photo = person.photo %}
-      <h2>{{ person.name }}</h2>
-      <h3>{{ person.role }}</h3>
-    </a>
-  </div>
-{% endfor %}
+  {% for person in site.team %}
+    <div class='person col-md-4 thumbnail'>
+      <a href='{{ person.url }}'>
+        {% include portrait.html photo = person.photo %}
+        <h2>{{ person.name }}</h2>
+        <h3>{{ person.role }}</h3>
+      </a>
+    </div>
+  {% endfor %}
 </div>
