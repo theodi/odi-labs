@@ -22,44 +22,8 @@ layout: default
   </div >
 </div>
 <div class='row'>
-  <div id='blosts' class='col-md-12'>
+  <div class='col-md-12'>
     <hr />
-    Blogposts by {{ page.name | split: ' ' | first }}: <ul class='list-unstyled' id='blog-posts'></ul>
+    {% include blosts.html words = 'Blogposts' %}
   </div>
 </div>
-
-<script>
-{% assign blosts = '' %}
-{% capture slug-name %}{{ page.url | split: '/' | last }}{% endcapture %}
-{% for blost in site.posts %}
-  {% if slug-name == blost.author.slug %}
-    {% capture title %}{{ blost.title | slice: 0, 20 }}{% endcapture %}
-    {% unless title == 'Tech Team Week Notes' %}
-      {% capture blosts %}{{ blosts }}'{{ blost.url }}': "{{ blost.title }}",
-  {% endcapture %}
-    {% endunless %}
-  {% endif %}
-{% endfor %}
-
-var blosts = {
-  {{ blosts }}
-}
-
-// via http://jsfiddle.net/C6LPY/2/
-$(function() {
-  k = Object.keys(blosts)
-  debugger
-  // always take the latest item
-  $("#blog-posts").append(listItem(k.splice(0, 1)[0]))
-
-  // and 2 other random ones
-  for(i = 0; i < 2; i++) {
-    $("#blog-posts").append(listItem(k.splice(Math.floor(Math.random() * k.length), 1)[0]))
-  }
-})
-
-function listItem(k) {
-  return '<li><a href="' + k + '">' + blosts[k] + '</a>'
-}
-
-</script>

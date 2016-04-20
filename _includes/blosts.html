@@ -1,0 +1,28 @@
+<div id='blosts'>
+  {{ include.words }} by {{ page.name | split: ' ' | first }}: <ul class='list-unstyled' id='blog-posts'></ul>
+</div>
+
+<script>
+{% include blosts-by.html author = page.id %}
+
+var blosts = {
+  {{ blosts }}
+}
+
+$(function() {
+  k = Object.keys(blosts)
+  debugger
+  // always take the latest item
+  $("#blog-posts").append(listItem(k.splice(0, 1)[0]))
+
+  // and 2 other random ones
+  for(i = 0; i < 2; i++) {
+    $("#blog-posts").append(listItem(k.splice(Math.floor(Math.random() * k.length), 1)[0]))
+  }
+})
+
+function listItem(k) {
+  return '<li><a href="' + k + '">' + blosts[k] + '</a>'
+}
+
+</script>
