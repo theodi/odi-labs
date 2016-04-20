@@ -22,7 +22,7 @@ layout: default
   </div>
   <div class='col-md-4 portrait hidden-xs'>
     <a href='{{ author.url }}'>
-      <img src='{{ author.photo }}' />
+      {% include portrait.html photo = author.photo %}
     </a>
   </div>
 </div>
