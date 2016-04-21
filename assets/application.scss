@@ -111,3 +111,20 @@ a:hover {
   width: 100%;
   text-align: center;
 }
+
+a {
+  .show-ctrl {
+      display: none;
+  }
+  .hide-ctrl {
+      display: block;
+  }
+  &.collapsed {
+    .show-ctrl {
+        display: block;
+    }
+    .hide-ctrl {
+        display: none;
+    }
+  }
+}
