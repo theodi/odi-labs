@@ -1,20 +1,10 @@
 <div id='blosts'>
   {{ include.words }} by {{ include.author | split: '-' | first | capitalize }}: <ul class='list-unstyled' id='blog-posts'></ul>
-
-  <a class='collapsed' data-toggle='collapse' href='#blog-archive' aria-expanded='false' aria-controls='blog-archive'>
-    <span class='show-ctrl'>
-      <i class='fa fa-arrow-circle-down'></i> Show all
-    </span>
-    <span class='hide-ctrl'>
-      <i class='fa fa-arrow-circle-up'></i> Hide
-    </span>
-  </a>
-
-  <ul class='list-unstyled collapse' id='blog-archive'></ul>
 </div>
 
-{% include blosts-by.html author = include.author %}
 <script>
+
+{% include blosts-by.html author = include.author %}
 
 var blosts = {
   {{ blosts }}
@@ -22,18 +12,18 @@ var blosts = {
 
 $(function() {
   k = Object.keys(blosts)
-  debugger
-  // always take the latest item
-  $("#blog-posts").append(listItem(k.splice(0, 1)[0]))
 
-  // and 2 other random ones
-  for(i = 0; i < 2; i++) {
-    $("#blog-posts").append(listItem(k.splice(Math.floor(Math.random() * k.length), 1)[0]))
+  if(k[0] == null) {
+    $('#blosts').remove()
+  } else {
+    // take the latest item
+    $("#blog-posts").append(listItem(k.splice(0, 1)[0]))
+
+    // and shuffle the rest
+    while(k.length) {
+      $("#blog-posts").append(listItem(k.splice(Math.floor(Math.random() * k.length), 1)[0]))
+    }
   }
-
-  $.each(k, function(i, v) {
-    $("#blog-archive").append(listItem(v))
-  })
 })
 
 function listItem(k) {

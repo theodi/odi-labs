@@ -112,19 +112,22 @@ a:hover {
   text-align: center;
 }
 
-a {
-  .show-ctrl {
-      display: none;
-  }
-  .hide-ctrl {
-      display: block;
-  }
-  &.collapsed {
+#blosts {
+  font-size: 1em;
+  a {
     .show-ctrl {
-        display: block;
+        display: none;
     }
     .hide-ctrl {
-        display: none;
+        display: block;
+    }
+    &.collapsed {
+      .show-ctrl {
+          display: block;
+      }
+      .hide-ctrl {
+          display: none;
+      }
     }
   }
 }

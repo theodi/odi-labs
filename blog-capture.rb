@@ -15,7 +15,7 @@ authors.each do |author|
     date = blost['created_at'].split('T')[0]
     filename = "blog/_posts/#{date}-#{blost['slug']}.md"
 
-    unless blost['slug'].match(/week-notes/)
+    unless blost['slug'].match(/week-?notes/)
       File.open filename, 'w' do |f|
         f.write blost.to_yaml
         f.write '---'
