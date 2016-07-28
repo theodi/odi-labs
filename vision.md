@@ -15,7 +15,7 @@ We deliver this mission through:
 <ul class="grid effect-2" id="grid2">
 <li class="home-module shown">
 <div class="module module-light module-colour-3">
-<a href="/vision">
+<a href="/projects">
 <h1 class="module-heading">Our projects</h1>
 <p class="module-subheading">Find out about the projects that we have done</p>
 </a>
@@ -23,7 +23,7 @@ We deliver this mission through:
 </li>
 <li class="home-module shown">
 <div class="module module-light module-colour-8">
-<a href="/collaborate">
+<a href="/tools">
 <h1 class="module-heading">Our tools</h1>
 <p class="module-subheading">Learn about the tools we have created</p>
 </a>
@@ -31,7 +31,7 @@ We deliver this mission through:
 </li>
 <li class="home-module shown">
 <div class="module module-light module-colour-11">
-<a href="/vision">
+<a href="/research">
 <h1 class="module-heading">Our research</h1>
 <p class="module-subheading">Discover what we are thinking</p>
 </a>
