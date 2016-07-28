@@ -19,5 +19,11 @@ collections:
   team:
     output: true
     layout: person
+  projects:
+    output: true
+    layout: project
+  tools:
+    output: true
+    layout: tool
 
 permalink: pretty
