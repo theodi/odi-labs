@@ -25,5 +25,8 @@ collections:
   tools:
     output: true
     layout: tool
+  research:
+    output: true
+    layout: research
 
 permalink: pretty
