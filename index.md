@@ -25,7 +25,7 @@ ODI Labs is a programme within the [Open Data Institute](http://theodi.org) that
 </li>
 <li class="home-module shown">
 <div class="module module-light module-colour-7">
-<a href="/vision">
+<a href="/guides">
 <h1 class="module-heading">Find out how to work with data</h1>
 <p class="module-subheading">Learn how to publish, discover and get insight from data</p>
 </a>
