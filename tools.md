@@ -2,6 +2,6 @@
 ---
 <ul>
 {% for tool in site.tools %}
-  <li><a href='{{tool.url}}'>{{tool.title}}</a></li>
+  <li><a href='{{tool.url}}'>{{tool.blurb}}</a></li>
 {% endfor %}
 </ul>
