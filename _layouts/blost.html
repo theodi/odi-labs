@@ -12,26 +12,30 @@ layout: default
 <div class='row'>
   <div class='col-md-8'>
     <h1>{{ page.title }}</h1>
-    <a href='{{ author.url }}'>
-      <h2 class='author'>{{ author.name }} - {{ author.role }}</h2>
-    </a>
+    {% if author.name %}
+      <a href='{{ author.url }}'>
+        <h2 class='author'>{{ author.name }} - {{ author.role }}</h2>
+      </a>
+    {% endif %}
 
     <div id='blog-content'>
       {{ page.details.content }}
     </div>
   </div>
   <div class='col-md-4'>
-    <div class='row'>
-      <div class='portrait col-md-12 hidden-xs'>
-        <a href='{{ author.url }}'>
-          {% include portrait.html photo = author.photo %}
-        </a>
+    {% if author.name %}
+      <div class='row'>
+        <div class='portrait col-md-12 hidden-xs'>
+          <a href='{{ author.url }}'>
+            {% include portrait.html photo = author.photo %}
+          </a>
+        </div>
+        <div class='col-md-12'>
+          <hr />
+          {% include blosts.html author = author.id words = 'Other blogposts' %}
+        </div>
       </div>
-      <div class='col-md-12'>
-        <hr />
-        {% include blosts.html author = author.id words = 'Other blogposts' %}
-      </div>
-    </div>
+    {% endif %}
   </div>
 </div>
 

@@ -1,0 +1,27 @@
+- name: Team
+  path: /team
+  # /team/:person
+
+- name: Research
+  path: /research
+  # /research/:theme
+
+- name: Vision
+  path: /vision
+
+- name: Tools
+  path: /tools
+  # /tools/:tool
+
+- name: Projects
+  path: /projects
+  # /projects/:project
+
+- name: Work with us
+  path: /collaborate
+
+- name: Resources
+  path: /resources
+
+- name: Guides
+  path: /guides 
