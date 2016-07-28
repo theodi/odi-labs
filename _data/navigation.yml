@@ -6,11 +6,11 @@
     - name: Mission
       path: /mission
 
-- name: Products
-  path: /products/
+- name: Projects
+  path: /projects/
 
-- name: Roadmap
-  path: /roadmap/
-  
+- name: Tools
+  path: /tools/
+
 - name: Blog
   path: /blog/
