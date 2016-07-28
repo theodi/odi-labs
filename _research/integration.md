@@ -1,4 +1,4 @@
 ---
 title: Integration
-content: |
-<p>something something</p>
+---
+some very interesting content
