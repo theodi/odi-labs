@@ -1,9 +1,5 @@
 ---
 ---
-<p>The ODI undertakes research on a broad range of areas related to open data.</p>
+The ODI undertakes research on a broad range of areas related to open data.
 
-<ul>
-{% for res in site.research %}
-  <li><a href='{{res.url}}'>{{res.title}}</a></li>
-{% endfor %}
-</ul>
+{% include list.md things = site.research %}

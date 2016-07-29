@@ -4,6 +4,7 @@ title: Sport England Data Audit and Dashboards
 date: July 2016
 client: Sport England
 ---
+
 # Overview
 We did a project for Sport England to help them understand their data and communicate their performance.
 
@@ -25,4 +26,4 @@ The dashboard is leading to a new approach to performance management for Sport E
 Finally, the project was a way for Sport England to demonstrate leadership in their sector.  
 
 # Find out more
-Please contact [Richard Norris](/team/richard-norris).  Alternatively, to learn more about dashboards please visit our [Bothan page](/tools/bothan).
+Please contact [Richard Norris](/team/richard-norris). Alternatively, to learn more about dashboards please visit our [Bothan page](/tools/bothan).

@@ -1,0 +1,16 @@
+- name: About
+  path: /about/
+  children:
+    - name: Team
+      path: /team
+    - name: Mission
+      path: /mission
+
+- name: Projects
+  path: /projects/
+
+- name: Tools
+  path: /tools/
+
+- name: Blog
+  path: /blog/

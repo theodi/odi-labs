@@ -1,6 +1,7 @@
 ---
 title: Discovery
 ---
+
 In the early days of the web, we created portals (DMOZ, Yahoo! directory). As the web scaled up, portals were no longer viable, and we moved to metadata search (Altavista, Lycos). Search was more scalable, but results were unreliable and easily gamed. The third generation of web discovery came with PageRank-style search (Google), which used many more cues for search including understanding of content, usage, and linking.
 
 On the web of data, we are still in the portal era. We are often asked “do you know where I can get X data”, and there is an expectation in the wider world that ODI “has all the data”.

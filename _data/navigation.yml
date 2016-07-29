@@ -1,16 +1,27 @@
-- name: About
-  path: /about/
-  children:
-    - name: Team
-      path: /team
-    - name: Mission
-      path: /mission
+- name: Team
+  path: /team
+  # /team/:person
 
-- name: Projects
-  path: /projects/
+- name: Research
+  path: /research
+  # /research/:theme
+
+- name: Vision
+  path: /vision
 
 - name: Tools
-  path: /tools/
+  path: /tools
+  # /tools/:tool
 
-- name: Blog
-  path: /blog/
+- name: Projects
+  path: /projects
+  # /projects/:project
+
+- name: Work with us
+  path: /collaborate
+
+- name: Resources
+  path: /resources
+
+- name: Guides
+  path: /guides   
