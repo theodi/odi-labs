@@ -2,7 +2,7 @@
 <ul class='grid'>
   {% for panel in panels %}
     {% for item in site.data.navigation %}
-      {% if item.name == panel %}
+      {% if item.path == panel %}
         {% capture heading %}{{ item.name }}{% endcapture %}
         {% unless item.not_our %}
           {% capture heading %}Our {{ heading | downcase }}{% endcapture %}
