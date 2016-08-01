@@ -4,6 +4,8 @@
 
 - name: Research
   path: /research
+  subhead: Discover what we are thinking
+  colour: 11
   # /research/:theme
 
 - name: Vision
@@ -11,10 +13,14 @@
 
 - name: Tools
   path: /tools
+  subhead: Learn about the tools we have created
+  colour: 8
   # /tools/:tool
 
 - name: Projects
   path: /projects
+  subhead: Find out about the projects that we have done
+  colour: 3
   # /projects/:project
 
 - name: Work with us
@@ -27,4 +33,4 @@
   path: /guides
 
 - name: Blog
-  path: /blog 
+  path: /blog

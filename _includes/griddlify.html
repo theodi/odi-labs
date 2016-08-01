@@ -1,0 +1,23 @@
+{% assign panels = include.panels | split: ',' %}
+<ul class='grid'>
+  {% for panel in panels %}
+    {% for item in site.data.navigation %}
+      {% if item.name == panel %}
+        <li class="home-module shown grid-item">
+          <div class="module module-light module-colour-{{ item.colour }}">
+            <a href="{{ item.path }}">
+              <h1 class="module-heading">Our {{ item.name }}</h1>
+              <p class="module-subheading">
+                {{ item.subhead }}
+              </p>
+            </a>
+          </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+</ul>
+
+<script>
+$('.grid').masonry();
+</script>
