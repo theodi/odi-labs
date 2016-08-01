@@ -32,3 +32,9 @@ We deliver this mission through reading a lot about:
     colour = 11
   %}
 </ul>
+
+<script>
+$('.grid').masonry({
+
+});
+</script>
