@@ -9,7 +9,10 @@
   # /research/:theme
 
 - name: Vision
+  alt-title: Learn what we do
   path: /vision
+  subhead: Find out about our projects, tools and research
+  colour: 12
 
 - name: Tools
   path: /tools
@@ -24,13 +27,19 @@
   # /projects/:project
 
 - name: Work with us
+  not_our: true
   path: /collaborate
+  subhead: Do research with us, join us as a fellow and develop with our code
+  colour: 3
 
 - name: Resources
   path: /resources
 
 - name: Guides
+  alt-title: Find out how to work with data
   path: /guides
+  subhead: Learn how to publish, discover and get insight from data
+  colour: 7
 
 - name: Blog
   path: /blog

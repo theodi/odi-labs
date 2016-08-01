@@ -3,10 +3,17 @@
   {% for panel in panels %}
     {% for item in site.data.navigation %}
       {% if item.name == panel %}
+        {% capture heading %}{{ item.name }}{% endcapture %}
+        {% unless item.not_our %}
+          {% capture heading %}Our {{ heading | downcase }}{% endcapture %}
+        {% endunless %}
+        {% if item.alt-title %}
+          {% assign heading = item.alt-title %}
+        {% endif %}
         <li class="home-module shown grid-item">
           <div class="module module-light module-colour-{{ item.colour }}">
             <a href="{{ item.path }}">
-              <h1 class="module-heading">Our {{ item.name }}</h1>
+              <h1 class="module-heading">{{ heading }}</h1>
               <p class="module-subheading">
                 {{ item.subhead }}
               </p>
