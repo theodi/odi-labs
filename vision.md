@@ -10,4 +10,4 @@ We deliver this mission through reading a lot about:
   * Software prototyping to apply research findings, explore new technologies, and help partner organisations innovate
   * Freemium tools that make working with data simple for non-technical users
 
-{% include griddlify.html panels = '/projects,/tools,/research' %}
+{% include griddlify.html panels = '/projects /tools /research' %}

@@ -1,4 +1,4 @@
-{% assign panels = include.panels | split: ',' %}
+{% assign panels = include.panels | split: ' ' %}
 <ul class='grid'>
   {% for panel in panels %}
     {% for item in site.data.navigation %}
