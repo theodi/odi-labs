@@ -10,33 +10,25 @@ We deliver this mission through:
   * Software prototyping to apply research findings, explore new technologies, and help partner organisations innovate
   * Freemium tools that make working with data simple for non-technical users
 
-<div class="container">
-<div class="row">
-<ul class="grid effect-2" id="grid2">
-<li class="home-module shown">
-<div class="module module-light module-colour-3">
-<a href="/projects">
-<h1 class="module-heading">Our projects</h1>
-<p class="module-subheading">Find out about the projects that we have done</p>
-</a>
-</div>
-</li>
-<li class="home-module shown">
-<div class="module module-light module-colour-8">
-<a href="/tools">
-<h1 class="module-heading">Our tools</h1>
-<p class="module-subheading">Learn about the tools we have created</p>
-</a>
-</div>
-</li>
-<li class="home-module shown">
-<div class="module module-light module-colour-11">
-<a href="/research">
-<h1 class="module-heading">Our research</h1>
-<p class="module-subheading">Discover what we are thinking</p>
-</a>
-</div>
-</li>
+<ul class='grid'>
+  {% include bright-box.html
+    heading = 'Our projects'
+    subhead = 'Find out about the projects that we have done'
+    url = '/projects'
+    colour = 3
+  %}
+
+  {% include bright-box.html
+    heading = 'Our tools'
+    subhead = 'Learn about the tools we have created'
+    url = '/tools'
+    colour = 8
+  %}
+
+  {% include bright-box.html
+    heading = 'Our research'
+    subhead = 'Discover what we are thinking'
+    url = '/research'
+    colour = 11
+  %}
 </ul>
-</div>
-</div>

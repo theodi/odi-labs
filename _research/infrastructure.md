@@ -1,5 +1,6 @@
 ---
 title: Infrastructure
+blurb: Put some words here
 ---
 
 This is a critical time in the development of the distributed technology landscape; there is a danger that immature solutions will dominate, harm the potential of these technologies and potentially damage the open web, so our input will be critical.

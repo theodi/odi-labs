@@ -1,5 +1,6 @@
 ---
 title: Integration
+blurb: Put some words here
 ---
 
 How do you know Steve Holt? Are you in AA? Wow. We're just blowing through nap time, aren't we? Stack the chafing dishes outside by the mailbox. I'm on the job. A group of British builders operating outside the O.C. Let me out that Queen.

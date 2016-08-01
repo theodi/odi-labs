@@ -1,32 +1,41 @@
 defaults:
-  - scope:
-      path: ''
-    values:
+  - values:
       layout: default
+
   - scope:
-      path: ''
       type: team
     values:
       layout: person
 
   - scope:
-      path: ''
       type: posts
     values:
       layout: blost
 
+  - scope:
+      type: tools
+    values:
+      layout: tool
+      output: true
+
+  - scope:
+      type: projects
+    values:
+      layout: project
+
+  - scope:
+      type: research
+    values:
+      layout: research
+
 collections:
-  team:
-    output: true
-    layout: person
-  projects:
-    output: true
-    layout: project
   tools:
     output: true
-    layout: tool
+  team:
+    output: true
+  projects:
+    output: true
   research:
     output: true
-    layout: research
 
 permalink: pretty

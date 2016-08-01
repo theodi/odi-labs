@@ -1,5 +1,6 @@
 ---
 title: Collaboration
+blurb: Put some words here
 ---
 
 Are you interested in open data? Are you curious about how you could use it, share it or help promote its social, economic and environmental benefits? Our mission is to equip, connect and inspire people around the world to innovate with data, and offer these ways for you to get involved.

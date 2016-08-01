@@ -1,5 +1,6 @@
 ---
 title: Publishing
+blurb: Put some words here
 ---
 
 Whether you want to publish your data, find open data or discover opportunities for collaboration.
