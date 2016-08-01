@@ -24,4 +24,7 @@
   path: /resources
 
 - name: Guides
-  path: /guides   
+  path: /guides
+
+- name: Blog
+  path: /blog 
