@@ -2,15 +2,33 @@
 title: Team
 ---
 
-<h1>Team</h1>
-<div class='row'>
-  {% for person in site.team %}
-    <div class='person col-md-4 thumbnail'>
-      <a href='{{ person.url }}'>
-        {% include portrait.html photo = person.photo %}
-        <h2>{{ person.name }}</h2>
-        <h3>{{ person.role }}</h3>
-      </a>
+<div class="container">
+  <div class="row">
+    <div class="people-team">
+      <ul class="grid" id="grid-people">
+        {% for person in site.team %}
+
+          {% assign photo = person.photo %}
+          {% unless photo %}
+            {% assign photo = 'http://placekitten.com/g/238/238' %}
+          {% endunless %}
+
+          <li class="home-module shown grid-item" >
+            <div class="module module-light module-colour-8">
+              <a href="{{ person.url }}">
+                <img alt="{{ person.name }}" src="{{ photo }}" width="238" class='headshot' />
+                <h1 class="module-heading">{{ person.name }}</h1>
+                <p class="module-subheading">{{ person.role }}</p>
+              </a>
+            </div>
+          </li>
+
+        {% endfor %}
+      </ul>
     </div>
-  {% endfor %}
+  </div>
 </div>
+
+<script>
+$('.grid').masonry();
+</script>

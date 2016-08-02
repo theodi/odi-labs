@@ -1,4 +1,5 @@
 ---
+title: Research
 ---
 The ODI undertakes research on a broad range of areas related to open data.
 

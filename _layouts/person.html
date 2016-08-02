@@ -6,20 +6,22 @@ layout: default
   <div class='col-md-8' id='bio'>
     <h1>{{ page.name }}</h1>
     <h2>{{ page.role }}</h2>
+
+    {{ content }}
+
     <ul class='list-inline'>
       {% for link in page.links %}
         <li>
           <a href='{{ link[1] }}'>
-            <i class='fa fa-{{ link[0] }}'></i>
+            <img alt="{{ link[0] }}" src="//static.theodi.org/assets/{{ link[0] | downcase}}.png" title="{{ link[0] }}">
           </a>
         </li>
       {% endfor %}
     </ul>
-    {{ page.bio | markdownify }}
   </div>
   <div class='col-md-4 portrait'>
     {% include portrait.html photo = page.photo %}
-  </div >
+  </div>
 </div>
 <div class='row'>
   <div class='col-md-12'>

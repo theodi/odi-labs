@@ -1,5 +1,5 @@
 ---
-title: ODI Labs
+title: Our vision
 ---
 
 ODI Labs exists to explore technology that can help create and connect the web of data, through applied research, pioneer-stage software development, and open collaboration on standards and tools.

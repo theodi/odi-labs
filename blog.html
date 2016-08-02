@@ -3,8 +3,6 @@ layout: default
 title: Blog
 ---
 
-<h1>Blog</h1>
-
 <dl class='blog-archive'>
   {% for blost in site.posts %}
     {% capture title %}{{ blost.title | slice: 0, 20 }}{% endcapture %}
