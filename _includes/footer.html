@@ -1,9 +1,58 @@
-<div id='footer'>
-  <ul class='list-inline'>
-    {% for link in site.data.links %}
-      <li>
-        <a href='{{ link.url }}' title='{{ link.title }}'><i class='fa {{ link.fontawesome }}'></i><span class='hidden-xs'> {{ link.title }}</span></a>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 footer-content">
+        <p>
+          <a href="http://www.theodi.org/contact">
+            Open Data Institute, 65 Clifton Street, London EC2A 4JE
+          </a>
+        </p>
+        <p class="license">
+          <a href="http://creativecommons.org/licenses/by-sa/2.0/uk/deed.en_GB" rel="license">
+            <img alt="Creative Commons Licence" height="15" src="//static.theodi.org/assets/cc-a23fe95f04508432c8d97c00b0a36254.png" width="80">
+          </a>
+        </p>
+      </div>
+      <div class="col-md-4 footer-nav">
+        <nav>
+          <ul class="pull-right list-inline">
+            {% for link in site.data.links %}
+              <li>
+                <a href='{{ link.url }}' title='{{ link.title }}'>
+                  <img alt="{{ link.title }}" src="//static.theodi.org/assets/{{ link.title | downcase}}.png" title="{{ link.title }}">
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+<!--<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>-->
+        <nav>
+          <ul class="pull-right list-inline">
+            <li class=" ">
+              <a href="https://theodi.org/terms-of-use" class=" ">
+                Terms of use
+              </a>
+            </li>
+            <li class=" ">
+              <a href="https://theodi.org/privacy-policy" class=" ">
+                Privacy policy
+              </a>
+            </li>
+            <li class=" ">
+              <a href="https://theodi.org/cookie-policy" class=" ">
+                Cookie policy
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</footer>

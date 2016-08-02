@@ -3,30 +3,40 @@ defaults:
       layout: default
 
   - scope:
+      path: ''
       type: team
     values:
       layout: person
 
   - scope:
+      path: ''
       type: posts
     values:
       layout: blost
 
   - scope:
+      path: ''
       type: tools
     values:
       layout: tool
-      output: true
 
   - scope:
+      path: ''
       type: projects
     values:
       layout: project
 
   - scope:
+      path: ''
       type: research
     values:
       layout: research
+
+  - scope:
+      path: ''
+      type: collaborate
+    values:
+      layout: collaborate
 
 collections:
   tools:
@@ -36,6 +46,8 @@ collections:
   projects:
     output: true
   research:
+    output: true
+  collaborate:
     output: true
 
 permalink: pretty
