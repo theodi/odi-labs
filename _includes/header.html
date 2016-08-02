@@ -3,63 +3,50 @@
     <div class="container">
       <div class="navbar-header">
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"><img alt="The ODI" id="odi-logo" src="//static.theodi.org/assets/logo-header-dc4ead7a18ea4133873c79502c174638.png"></a>
-    </div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">
+          <img alt="The ODI" id="odi-logo" src="//static.theodi.org/assets/logo-header-dc4ead7a18ea4133873c79502c174638.png">
+        </a>
+      </div>
 
-    {% include logo-modal.html %}
+      {% include logo-modal.html %}
 
-  </div>
-</div>
-
-<div class="collapse navbar-collapse">
-  <div class="navbar navbar-static-top">
-    <div class="container">
-      <ul class="nav navbar-nav main-nav">
-        <li class="dropdown">
-          <a href="/news">
-            News &amp; blog
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="/get-involved">
-            Get involved
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="/our-network">
-            Our global network
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="/events">
-            Events
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="/our-focus">
-            Our focus
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="/publications">
-            Publications
-          </a>
-        </li>
-        <li class="dropdown last">
-          <a href="/about">
-            About the ODI
-          </a>
-        </li>
-      </ul>
     </div>
   </div>
-</div>
+
+  <div class="collapse navbar-collapse">
+    <div class="navbar navbar-static-top">
+      <div class="container">
+        <ul class="nav navbar-nav main-nav">
+
+          {% for item in site.data.navigation %}
+            {% if item.children %}
+              <li class='dropdown'>
+                <a href='{{item.path}}' class='dropdown-toggle' data-toggle='dropdown'>{{ item.name }}
+                  <i class='fa fa-chevron-circle-down'></i>
+                </a>
+                <ul class='dropdown-menu' role='menu'>
+                  {% for child in item.children %}
+                    <li>
+                      <a href='{{ child.path }}'>{{ child.name }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% else %}
+              <li>
+                <a href='{{ item.path }}'>{{ item.name }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+
+        </ul>
+      </div>
+    </div>
+  </div>
 
 </header>
-
-{% include navigation.html %}
