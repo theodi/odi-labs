@@ -3,6 +3,19 @@ layout: default
 title: Blog
 ---
 
+<ul class='grid'>
+  {% for blost in site.posts %}
+    {% capture description %}{{ blost.description | slice: 0, 100 }}{% endcapture %}
+    {% if description != '' %}
+      {% capture description %}{{ description }}...{% endcapture %}
+    {% endif %}
+    {% unless title == 'Tech Team Week Notes' %}
+      {% capture box-colour %}{% cycle 1, 4, 7, 10, 2, 5, 8, 11, 3, 9, 12 %}{% endcapture %}
+      {% include bright-box.html url = blost.url heading = blost.title subhead = description colour = box-colour %}
+    {% endunless %}
+  {% endfor %}
+</ul>
+
 <dl class='blog-archive'>
   {% for blost in site.posts %}
     {% capture title %}{{ blost.title | slice: 0, 20 }}{% endcapture %}
@@ -18,3 +31,7 @@ title: Blog
     {% endunless %}
   {% endfor %}
 </dl>
+
+<script>
+$('.grid').masonry();
+</script>
