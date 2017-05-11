@@ -17,7 +17,8 @@ title: Blog
 </ul>
 
 <dl class='blog-archive'>
-  Blog Archive <br>
+  <h3>Blog Archive</h3>
+   <br>
   {% for blost in site.posts %}
 
     {% capture title %}{{ blost.title | slice: 0, 20 }}{% endcapture %}
