@@ -1,12 +1,12 @@
-- name: Team
-  path: /team
-  # /team/:person
+#- name: Team
+#  path: /team
+#  # /team/:person
 
-- name: Research
-  path: /research
-  subhead: Discover what we are thinking
-  colour: 11
-  # /research/:theme
+#- name: Research
+#  path: /research
+#  subhead: Discover what we are thinking
+#  colour: 11
+#  # /research/:theme
 
 - name: Vision
   alt-title: Learn what we do
@@ -20,10 +20,10 @@
   colour: 8
   # /tools/:tool
 
-- name: Projects
-  path: /projects
-  subhead: Find out about the projects that we have done
-  colour: 3
+#- name: Projects
+#  path: /projects
+#  subhead: Find out about the projects that we have done
+#  colour: 3
   # /projects/:project
 
 - name: Work with us
@@ -32,14 +32,14 @@
   subhead: Do research with us, join us as a fellow and develop with our code
   colour: 3
 
-- name: Resources
-  path: /resources
+#- name: Resources
+#  path: /resources
 
-- name: Guides
-  alt-title: Find out how to work with data
-  path: /guides
-  subhead: Learn how to publish, discover and get insight from data
-  colour: 7
+#- name: Guides
+#  alt-title: Find out how to work with data
+#  path: /guides
+#  subhead: Learn how to publish, discover and get insight from data
+#  colour: 7
 
 - name: Blog
   path: /blog
