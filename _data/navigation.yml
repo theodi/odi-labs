@@ -1,12 +1,12 @@
-- name: Team
-  path: /team
-  # /team/:person
+#- name: Team
+#  path: /team
+#  # /team/:person
 
-- name: Research
-  path: /research
-  subhead: Discover what we are thinking
-  colour: 11
-  # /research/:theme
+#- name: Research
+#  path: /research
+#  subhead: Discover what we are thinking
+#  colour: 11
+#  # /research/:theme
 
 - name: Vision
   alt-title: Learn what we do
@@ -20,44 +20,46 @@
   colour: 8
   # /tools/:tool
 
-- name: Projects
-  path: /projects
-  subhead: Find out about the projects that we have done
-  colour: 3
+#- name: Projects
+#  path: /projects
+#  subhead: Find out about the projects that we have done
+#  colour: 3
   # /projects/:project
 
-- name: Work with us
-  not_our: true
-  path: /collaborate
-  subhead: Do research with us, join us as a fellow and develop with our code
-  colour: 3
 
-- name: Resources
-  path: /resources
 
-- name: Guides
-  alt-title: Find out how to work with data
-  path: /guides
-  subhead: Learn how to publish, discover and get insight from data
-  colour: 7
+#- name: Resources
+#  path: /resources
+
+#- name: Guides
+#  alt-title: Find out how to work with data
+#  path: /guides
+#  subhead: Learn how to publish, discover and get insight from data
+#  colour: 7
 
 - name: Blog
   path: /blog
 
-- name: Become an ODI Labs Fellow
-  path: /collaborate/fellowships
-  subhead: Come and work with us for 3-6 months
-  colour: 12
-  not_our: true
+#- name: Work with us
+#  not_our: true
+#  path: /collaborate
+#  subhead: Do research with us, join us as a fellow and develop with our code
+#  colour: 3
 
-- name: Build on our code
-  path: /collaborate/code
-  subhead: Use our tools and libraries in your work
-  colour: 3
-  not_our: true
-
-- name: Partner with us
-  path: /collaborate/research
-  subhead: Collaborate on research projects
-  colour: 7
-  not_our: true
+#- name: Become an ODI Labs Fellow
+#  path: /collaborate/fellowships
+#  subhead: Come and work with us for 3-6 months
+#  colour: 12
+#  not_our: true
+#
+#- name: Build on our code
+#  path: /collaborate/code
+#  subhead: Use our tools and libraries in your work
+#  colour: 3
+#  not_our: true
+#
+#- name: Partner with us
+#  path: /collaborate/research
+#  subhead: Collaborate on research projects
+#  colour: 7
+#  not_our: true
