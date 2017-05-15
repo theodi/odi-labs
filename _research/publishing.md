@@ -1,6 +1,6 @@
 ---
 title: Publishing
-blurb: Put some words here
+blurb: Making publishing data in the open simpler than keeping it closed.
 ---
 
 Whether you want to publish your data, find open data or discover opportunities for collaboration.

@@ -1,6 +1,6 @@
 ---
 title: Collaboration
-blurb: Put some words here
+blurb: Enable open data publishers and users to work together to create and maintain high-quality datasets.
 ---
 
 Are you interested in open data? Are you curious about how you could use it, share it or help promote its social, economic and environmental benefits? Our mission is to equip, connect and inspire people around the world to innovate with data, and offer these ways for you to get involved.

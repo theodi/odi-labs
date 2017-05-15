@@ -1,6 +1,6 @@
 ---
 title: Integration
-blurb: Put some words here
+blurb: Automatically combine diverse datasets to create new insights and support decision making.
 ---
 
 He's had quite an evening. Someone stole his wheelchair. Did you see who it was? Red bearded man.No, no, that's the music you heard when it come on.0115... no... 0118... no... 0118 999 ... 3. Hello? Is this the emergency services? Then which country am I speaking to? Hello? Hello?How can you two... Don't Google the question, Moss!Uh... okay, well, the button on the side, is it glowing?You can come down here any time and I'll be waiting for you! [slams down phone] That told her!
