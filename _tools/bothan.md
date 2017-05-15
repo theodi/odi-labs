@@ -2,7 +2,7 @@
 title: Bothan
 site: https://bothan.io
 code: https://github.com/theodi/bothan
-blurb: Make a data-driven dashboard
+blurb: A simple platform for publishing metrics, both as JSON, and as embeddable visualisations that let you make a data-driven dashboard
 ---
 
 OK. Moss, what did you have for breakfast this morning? Smarties cereal.While he was eating, did you hear anyone laughing? Like... in the kitchen area? Yes! Yes I did, actually, yes I did. That'd be trouser food!I'll put this over here, with the rest of the fire.See the driver hooks a function by patching the system call table, so its not safe to unload it unless another thread's about to jump in there and do its stuff, and you don't want to end up in the middle of invalid memory!When I started Reynholm Industries, I had just two things in my possession: a dream and 6 million pounds.While he was eating, did you hear anyone laughing? Like... in the kitchen area? Yes! Yes I did, actually, yes I did. That'd be trouser food!
