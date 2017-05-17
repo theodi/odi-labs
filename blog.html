@@ -17,7 +17,10 @@ title: Blog
 </ul>
 
 <dl class='blog-archive'>
+  <h3>Blog Archive</h3>
+   <br>
   {% for blost in site.posts %}
+
     {% capture title %}{{ blost.title | slice: 0, 20 }}{% endcapture %}
     {% unless title == 'Tech Team Week Notes' %}
       <dt>
@@ -25,9 +28,9 @@ title: Blog
           {{ blost.title }}
         </a>
       </dt>
-      <dd>
-        {{ blost.description }}
-      </dd>
+      <!--<dd>-->
+        <!--{{ blost.description }}-->
+      <!--</dd>-->
     {% endunless %}
   {% endfor %}
 </dl>
@@ -35,3 +38,5 @@ title: Blog
 <script>
 $('.grid').masonry();
 </script>
+
+
