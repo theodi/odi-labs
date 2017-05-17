@@ -27,7 +27,7 @@
   # /projects/:project
 
 - name: Roadmap
-  url: https://trello.com/b/2xc7Q0kd/labs-public-toolbox-roadmap
+  path: https://trello.com/b/2xc7Q0kd/labs-public-toolbox-roadmap
 
 
 #- name: Resources
