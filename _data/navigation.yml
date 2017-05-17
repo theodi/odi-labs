@@ -26,6 +26,8 @@
 #  colour: 3
   # /projects/:project
 
+- name: Roadmap
+  path: https://trello.com/b/2xc7Q0kd/labs-public-toolbox-roadmap
 
 
 #- name: Resources
