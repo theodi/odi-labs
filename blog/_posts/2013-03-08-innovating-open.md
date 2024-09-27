@@ -2,7 +2,8 @@
 author:
   name: Sam Pikesley
   slug: sam-pikesley
-description: 
+description:
+title: Innovating in the Open
 ---
 
 <p>The idea of &ldquo;Innovation time&rdquo; originated, as far as I&rsquo;ve been able to establish, at 3M in 1948. HP are reported to have allowed their engineers to work on whatever they wanted on a Friday afternoon, and &ldquo;20% time&rdquo; is a firm fixture at Google.</p>
