@@ -2,11 +2,11 @@
 #  path: /team
 #  # /team/:person
 
-#- name: Research
-#  path: /research
-#  subhead: Discover what we are thinking
-#  colour: 11
-#  # /research/:theme
+- name: Research
+  path: /research
+  subhead: Discover what we are thinking
+  colour: 11
+  # /research/:theme
 
 - name: Vision
   alt-title: Learn what we do

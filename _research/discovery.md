@@ -1,6 +1,6 @@
 ---
 title: Discovery
-blurb: Put some words here
+blurb: Help people find the data they are looking for, and discover relevant data they didn’t even know existed.
 ---
 
 In the early days of the web, we created portals (DMOZ, Yahoo! directory). As the web scaled up, portals were no longer viable, and we moved to metadata search (Altavista, Lycos). Search was more scalable, but results were unreliable and easily gamed. The third generation of web discovery came with PageRank-style search (Google), which used many more cues for search including understanding of content, usage, and linking.
